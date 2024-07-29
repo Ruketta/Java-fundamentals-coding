@@ -4,7 +4,7 @@ public class Dog {
     // proprietati
     String rasa;
     int varsta;
-    String nume;
+    String name;
     boolean
 
     //constructori
@@ -15,12 +15,12 @@ public class Dog {
         // daca avem un constructor definit, putem defini in mod explicit constructorul default
     }
 
-    public Dog (String rasa,int varsta,String nume){
+    public Dog (String rasa,int varsta,String name){
         //constructor cu parametrii
 
         this.rasa = rasa;
         this.varsta = varsta;
-        this.nume = nume;
+        this.name = name;
 
 
     }
@@ -28,13 +28,13 @@ public class Dog {
     public String toString(){
         // metoda toStrine () transforme obiectul nostru intrun text
         // atunci cand dorim sa afisam un obiect folosin sout metoda toString se apeleaza automat
-        return "rasa: " + this.rasa + ", varsta :" + this.varsta + ", nume: " + this.nume;
+        return "rasa: " + this.rasa + ", varsta :" + this.varsta + ", nume: " + this.name;
     }
 
     public boolean equals (Object o) {
         Dog obj = (Dog) o; // am facut cast de la object la dog
 
-        if (this.nume.equals(obj.nume) && this.rasa.equals(obj.rasa && this.varsta == obj.varsta)){
+        if (this.name.equals(obj.name) && this.rasa.equals(obj.rasa && this.varsta == obj.varsta)){
             return true;
         } else {
             return false;
