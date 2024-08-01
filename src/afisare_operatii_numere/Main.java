@@ -11,14 +11,15 @@ public class Main {
         afisareNumereImpare();
     }
 
-    public static void afisareNumereImpare(){
+    public static void afisareNumereImpare() {
         for (int i = 0; i <= 50; i++) {
-            if (i % 2!= 0) {
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
         }
 
     }
+
     public static void afisareNumereDivizibileCu3Si5() {
         int i = 1;  // i ne ajuta sa luam toate numerele de la 1 la infinit
         int contor = 0; // contor ne ajuta sa tinem evidenta numerelor gasite ce indeplinesc conditia
@@ -26,12 +27,12 @@ public class Main {
 
         while (contor < 5) { // se executa cat timp variabila contor este mai mica decat 5
 
-            if (i % 3 ==0 && i % 5 == 0) { // verificam daca numarul i se imparte exact la 3 si la 5
+            if (i % 3 == 0 && i % 5 == 0) { // verificam daca numarul i se imparte exact la 3 si la 5
                 suma = suma + i; // daca este indeplinita conditia, adunam numarul gasit la suma existenta
                 contor++; // contorul se incrementeaza atunci cand gasim un numar ce indeplineste conditia
             }
             i++; // i-ul se incrementeaza indiferent daca conditia este indeplinita
         }
         System.out.println(suma); // afisam suma numerelor gasite
-
     }
+}
